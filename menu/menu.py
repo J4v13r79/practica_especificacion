@@ -1,7 +1,7 @@
-from ejercicios import ejercicio1_luz as ej1 
-from ejercicios import ejercicio2_calificacion as ej2 
-from ejercicios import ejercicio3_compra as ej3 
-from ejercicios import ejercicio4_estacionamiento as ej4 
+from Ejercicios.Ejercicios1_luz import leerConsumo, calcularPago, mostrarRecibo
+from Ejercicios import ejercicio2_calificacion as ej2 
+from Ejercicios import ejercicio3_compra as ej3 
+from Ejercicios import ejercicio4_estacionamiento as ej4 
  
  
 def ejecutarEjercicio1(): 
