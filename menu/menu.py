@@ -2,6 +2,9 @@ from Ejercicios.Ejercicios1_luz import leerConsumo, calcularPago, mostrarRecibo
 from Ejercicios.Ejercicio2_calificaciones import leerParciales, calcularFinal,determinarEstado, mostrarResultado
 from Ejercicios.Ejercicio3_compra import leerSubtotal, calcularDescuento, calcularIVA, calcularTotal, mostrarTicket
 from Ejercicios.Ejercicio4_estacionamiento import leerMinutos, calcularCobro, mostrarCobro  
+from Ejercicios.Ejercicio5_renta import leerHoras, calcularRenta, mostrarRenta
+from Ejercicios.ejercicio6_cine import leerEdad, calcularPrecio, mostrarPrecio
+from Ejercicios.ejercicio7_multa import leerVelocidad, calcularMulta, mostrarMulta
  
  
 def ejecutarEjercicio1(): 
@@ -30,6 +33,21 @@ def ejecutarEjercicio4():
     importe_cobrar = calcularCobro(tiempo_estancia)
     mostrarCobro(importe_cobrar)
 
+def ejecutarEjercicio5():
+    horas_renta = leerHoras()
+    importe_renta = calcularRenta(horas_renta)
+    mostrarRenta(importe_renta)
+
+def ejecutarEjercicio6():
+    edad = leerEdad()
+    importe_boleto = calcularPrecio(edad)
+    mostrarPrecio(importe_boleto)
+
+def ejecutarEjercicio7():
+    velocidad = leerVelocidad()
+    importe_multa = calcularMulta(velocidad)
+    mostrarMulta(importe_multa)
+
 
 def mostrarMenu():
     print()
@@ -38,6 +56,9 @@ def mostrarMenu():
     print("2. Calificación final") 
     print("3. Total de compra") 
     print("4. Estacionamiento") 
+    print("5. Renta de bicicletas")
+    print("6. Boleto de cine")
+    print("7. Multa de tránsito")
     print("0. Salir") 
  
  
@@ -54,5 +75,11 @@ def menus():
             ejecutarEjercicio3() 
         elif opcion == "4": 
             ejecutarEjercicio4() 
+        elif opcion == "5":
+            ejecutarEjercicio5()
+        elif opcion == "6":
+            ejecutarEjercicio6()
+        elif opcion == "7":
+            ejecutarEjercicio7()
         elif opcion != "0": 
             print("Opción no válida.")
