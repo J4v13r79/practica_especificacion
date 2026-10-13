@@ -1,7 +1,7 @@
 from Ejercicios.Ejercicios1_luz import leerConsumo, calcularPago, mostrarRecibo
 from Ejercicios.Ejercicio2_calificaciones import leerParciales, calcularCalificacionFinal,determinarEstado, mostrarResultado
-from Ejercicios.Ejercicio3_compra import 
-from Ejercicios.Ejercicio4_estacionamiento import 
+from Ejercicios.Ejercicio3_compra import leerSubtotal, calcularDescuento, calcularIVA, calcularTotal, mostrarTicket
+from Ejercicios.Ejercicio4_estacionamiento import leerMinutos, calcularCobro, mostrarCobro  
  
  
 def ejecutarEjercicio1(): 
@@ -18,15 +18,21 @@ def ejecutarEjercicio2():
 
 
 def ejecutarEjercicio3():
-    print("Ejercicio 3 pendiente.")
- 
- 
-def ejecutarEjercicio4(): 
-    print("Ejercicio 4 pendiente.") 
- 
- 
-def mostrarMenu(): 
-    print() 
+    subtotal = leerSubtotal()
+    descuento = calcularDescuento(subtotal)
+    iva = calcularIVA(subtotal)
+    total = calcularTotal(subtotal, descuento, iva)
+    mostrarTicket(subtotal, descuento, iva, total)
+
+
+def ejecutarEjercicio4():
+    tiempo_estancia = leerMinutos()
+    importe_cobrar = calcularCobro(tiempo_estancia)
+    mostrarCobro(importe_cobrar)
+
+
+def mostrarMenu():
+    print()
     print("PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN") 
     print("1. Recibo de luz") 
     print("2. Calificación final") 

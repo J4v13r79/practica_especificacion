@@ -32,3 +32,15 @@ Caso        Entrada          Esperado(a mano)         Obtenido        Coincide
                                                            
 Núm.            Qué propuso Copilot             Causa           Sección quincumple       accion 
                  no hubo errores                                    
+
+Ejercicio 4
+Primer ejercicio
+Caso        Entrada          Esperado(a mano)         Obtenido        Coincide
+1              45               20
+2              60               20
+3              61               35
+4              150              50
+5              600              150
+                                                           
+Núm.            Qué propuso Copilot             Causa           Sección quincumple       accion 
+                 no hubo errores                                    
