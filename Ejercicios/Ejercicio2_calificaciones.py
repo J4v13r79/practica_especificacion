@@ -61,7 +61,9 @@ def leerParciales():
 def calcularFinal(parcial1, parcial2, parcial3):
     return parcial1 * 0.3 + parcial2 * 0.3 + parcial3 * 0.4
 
-def determinarEstado(calificacion_final):
+def determinarEstado(calificacion_final, parcial1, parcial2, parcial3):
+    if parcial1 < 50 or parcial2 < 50 or parcial3 < 50:
+        return False
     return calificacion_final >= 70
 
 def mostrarResultado(calificacion_final, aprobado):
