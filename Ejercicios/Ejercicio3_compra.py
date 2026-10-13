@@ -56,3 +56,27 @@ subtotal, descuento, IVA y total.
 # mostrarTicket : mostrar el ticket de compra.
 
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
+
+def leerSubtotal():
+    subtotal = float(input("Ingrese el subtotal de la compra: "))
+    return subtotal
+
+def calcularDescuento(subtotal):
+    if subtotal < 1000:
+        return 0
+    elif subtotal < 5000:
+        return subtotal * 0.1
+    else:
+        return subtotal * 0.2
+
+def calcularIVA(subtotal):
+    return subtotal * 0.16
+
+def calcularTotal(subtotal, descuento, iva):
+    return subtotal - descuento + iva
+
+def mostrarTicket(subtotal, descuento, iva, total):
+    print(f"Subtotal: ${subtotal:.2f}")
+    print(f"Descuento: ${descuento:.2f}")
+    print(f"IVA: ${iva:.2f}")
+    print(f"Total: ${total:.2f}")

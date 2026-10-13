@@ -21,3 +21,14 @@ Caso        Entrada          Esperado(a mano)                                   
 
 Núm.            Qué propuso Copilot                   Causa                  Sección quincumpl            accion 
 codigo                                                                                                                                                     1       no reprobar con el parcial menor al 50       las restrccioens                                    volverlo a intentar
+
+Ejercicio 3
+Primer ejercicio
+Caso        Entrada          Esperado(a mano)         Obtenido        Coincide
+1           500$                580$ 
+2           900$                1044$
+3           1000$               1044$
+4           5000$               4640$
+                                                           
+Núm.            Qué propuso Copilot             Causa           Sección quincumple       accion 
+                 no hubo errores                                    
