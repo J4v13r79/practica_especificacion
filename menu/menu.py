@@ -1,21 +1,24 @@
 from Ejercicios.Ejercicios1_luz import leerConsumo, calcularPago, mostrarRecibo
-from Ejercicios import ejercicio2_calificacion as ej2 
-from Ejercicios import ejercicio3_compra as ej3 
-from Ejercicios import ejercicio4_estacionamiento as ej4 
+from Ejercicios.Ejercicio2_calificaciones import leerParciales, calcularCalificacionFinal,determinarEstado, mostrarResultado
+from Ejercicios.Ejercicio3_compra import 
+from Ejercicios.Ejercicio4_estacionamiento import 
  
  
 def ejecutarEjercicio1(): 
     consumo_kwh = leerConsumo() 
     importe_recibo = calcularPago(consumo_kwh) 
     mostrarRecibo(consumo_kwh, importe_recibo)
- 
- 
-def ejecutarEjercicio2(): 
-    print("Ejercicio 2 pendiente.") 
- 
- 
-def ejecutarEjercicio3(): 
-    print("Ejercicio 3 pendiente.") 
+
+
+def ejecutarEjercicio2():
+    parcial1, parcial2, parcial3 = leerParciales()
+    calificacion_final = calcularCalificacionFinal(parcial1, parcial2, parcial3)
+    aprobado = determinarEstado(calificacion_final, parcial1, parcial2, parcial3)
+    mostrarResultado(calificacion_final, aprobado)
+
+
+def ejecutarEjercicio3():
+    print("Ejercicio 3 pendiente.")
  
  
 def ejecutarEjercicio4(): 
