@@ -52,13 +52,13 @@ muestra el importe a cobrar.
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
 # asi sea 1 minuto desde la anterior hora se cobra la hora completa
 # tener 30 minutos de tolerancia para la primera hora, si se pasa de 30 minutos se cobra la primera hora y desde ahi hasta los 60 minutos se cobra la primera hora y desde ahi se cobra la segunda hora
-
+#cuando pasa la siguente hora se cobra la hora completa, es decir si se pasa de 60 minutos se cobra la segunda hora y asi sucesivamente
 def leerMinutos():
     tiempo_estancia = int(input("Ingrese el tiempo de estancia en minutos: "))
     return tiempo_estancia
 
 def calcularCobro(tiempo_estancia):
-    horas_estancia = tiempo_estancia / 60
+    horas_estancia = tiempo_estancia % 60 == 0 and tiempo_estancia // 60 or tiempo_estancia // 60 + 1
     if horas_estancia > 0.5 and horas_estancia <= 1:
         return 20
     elif horas_estancia <= 10:

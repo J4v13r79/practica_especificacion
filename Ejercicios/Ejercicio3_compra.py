@@ -56,6 +56,7 @@ subtotal, descuento, IVA y total.
 # mostrarTicket : mostrar el ticket de compra.
 
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
+# primero se calcula el descuento, luego el subtotal, luego el IVA y finalmente el total
 
 def leerSubtotal():
     subtotal = float(input("Ingrese el subtotal de la compra: "))

@@ -1,5 +1,5 @@
 from Ejercicios.Ejercicios1_luz import leerConsumo, calcularPago, mostrarRecibo
-from Ejercicios.Ejercicio2_calificaciones import leerParciales, calcularCalificacionFinal,determinarEstado, mostrarResultado
+from Ejercicios.Ejercicio2_calificaciones import leerParciales, calcularFinal,determinarEstado, mostrarResultado
 from Ejercicios.Ejercicio3_compra import leerSubtotal, calcularDescuento, calcularIVA, calcularTotal, mostrarTicket
 from Ejercicios.Ejercicio4_estacionamiento import leerMinutos, calcularCobro, mostrarCobro  
  
@@ -12,7 +12,7 @@ def ejecutarEjercicio1():
 
 def ejecutarEjercicio2():
     parcial1, parcial2, parcial3 = leerParciales()
-    calificacion_final = calcularCalificacionFinal(parcial1, parcial2, parcial3)
+    calificacion_final = calcularFinal(parcial1, parcial2, parcial3)
     aprobado = determinarEstado(calificacion_final, parcial1, parcial2, parcial3)
     mostrarResultado(calificacion_final, aprobado)
 
