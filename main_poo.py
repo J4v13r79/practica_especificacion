@@ -1,9 +1,9 @@
-from menu.Menu_poo import menus
+from menu.Menu_poo import Menu
 
 
 def main():
-    m = menus()
-    m.ejecutar()
+    m = Menu()
+    m.menus()
 
 if __name__ == "__main__":
     main()
