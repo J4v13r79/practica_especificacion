@@ -3,6 +3,7 @@ from Clases.Ejemplo.Ejercicios.Recibo import Recibo
 from Clases.Ejemplo.Ejercicios.Calificaciones import Calificaciones
 from Clases.Ejemplo.Ejercicios.BoletoCine import BoletoCine
 from Clases.Ejemplo.Ejercicios.Multa import Multa
+from Clases.Ejemplo.Ejercicios.RentaBici import RentaBici
 
 
 class Menu(object):
@@ -17,6 +18,7 @@ class Menu(object):
         print("3. Calificaciones")
         print("4. Boleto de cine")
         print("5. Multa")
+        print("6. Renta de bicicletas")
         print("0. Salir")
 
     def menus(self):
@@ -56,6 +58,12 @@ class Menu(object):
                 multa.leerVelocidad()
                 multa.calcularMulta()
                 multa.mostrarMulta()
+            
+            elif self.opcion == "6":
+                renta = RentaBici()
+                renta.LeerHoras()
+                renta.CalcularRenta()
+                renta.MostrarRenta()
 
             elif self.opcion == "0":
                 print("Saliendo del programa...")

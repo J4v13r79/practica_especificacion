@@ -1,6 +1,6 @@
 
 
-# EJERCICIO 6. BOLETO DE CINE 
+# EJERCICIO 7. Multa
 # Cuando superas el limite de velocidad de 60km/h por 1 km/h hasta 20km/h, la multa es de $500.
 # Cuando superas el limite de velocidad de 60km/h por mas de 20km/h, la multa es de $1,000. 
 # Se necesita mostrar la velocidad del vehiculo y la multa a pagar según la velocidad.
